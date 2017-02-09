@@ -5,6 +5,8 @@
  */
 package bank_lanjutan;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author USER-ACER-PC
@@ -118,14 +120,46 @@ public class setor extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
- int h1 = Integer.parseInt(setort1.getText());
+ String trk = setort1.getText();
+ String sld = saldoa.getText();
+        boolean huruf = false;
+        int tarik = 0;
+        int saldo = 0;
+        float num1;
+        
+        try {
+            num1 = Float.parseFloat(trk);
+        }
+        catch (NumberFormatException e) {
+            huruf = true;
+        }
+        
+        if (huruf) {
+            JOptionPane.showMessageDialog(null, "Data diisi dengan Angka");
+            tarik = Integer.parseInt(trk);
+            saldo = Integer.parseInt(sld);
+        }
+        
+     
+        if (setort1.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Data Harus Diisi");
+        } else if (tarik > saldo){
+                      JOptionPane.showMessageDialog(null, "Saldo Anda tidak mencukupi");
+        }
+        
+
+
+else{
+        
+        int h1 = Integer.parseInt(setort1.getText());
         int q2 = Integer.parseInt(saldoa.getText());
         int x = h1+q2;   
         
-        saldok.setText(String.valueOf(x));   
+        saldok.setText(String.valueOf(x));
+       
      // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-
+}
     private void saldoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saldoaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_saldoaActionPerformed

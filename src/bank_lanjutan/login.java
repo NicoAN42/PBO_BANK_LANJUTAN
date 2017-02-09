@@ -44,7 +44,7 @@ public class login extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Phantasm", 1, 18)); // NOI18N
         jLabel3.setText("BANK GLYPH");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -54,7 +54,7 @@ public class login extends javax.swing.JFrame {
                 pintActionPerformed(evt);
             }
         });
-        jPanel1.add(pint, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 50, 120, -1));
+        jPanel1.add(pint, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, 120, -1));
 
         jButton1.setText("OK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -62,16 +62,16 @@ public class login extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("DigifaceWide", 1, 18)); // NOI18N
         jLabel1.setText("PIN");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
 
         lblerror.setFont(new java.awt.Font("Yikes", 1, 14)); // NOI18N
-        jPanel1.add(lblerror, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 320, 50));
+        jPanel1.add(lblerror, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 320, 50));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 170));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 240, -1));
 
         pack();
         setLocationRelativeTo(null);
