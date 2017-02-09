@@ -118,7 +118,7 @@ public class setor extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
- int h1 = Integer.parseInt(saldoa.getText());
+ int h1 = Integer.parseInt(setort1.getText());
         int q2 = Integer.parseInt(saldoa.getText());
         int x = h1+q2;   
         

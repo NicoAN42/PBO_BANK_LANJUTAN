@@ -125,7 +125,7 @@ public class tarik extends javax.swing.JFrame {
 
         int h1 = Integer.parseInt(tarikt.getText());
         int q2 = Integer.parseInt(saldoa.getText());
-        int x = h1-q2;   
+        int x = q2-h1;   
         
         saldok.setText(String.valueOf(x));         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
